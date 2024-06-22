@@ -22,6 +22,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 - Live Demo: [Recipe Page](https://margauxarmanet.github.io/Frontend-Mentor-Challenge-Recipe-Page/)
 
+## My process
+
 ### Built with
 
 - Semantic HTML5 markup
