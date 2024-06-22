@@ -1,0 +1,196 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/*** variables ***/
+:root {
+  /* fonts */
+  --main-font-family: 'Outfit', sans-serif;
+  --highlight-font-family: 'Young Serif', serif;
+  /* font colors */
+  --dark-font-color: #312e2c;
+  --light-font-color: #5f564d;
+  --highlight-font-color: #854632;
+  --information-font-color: #732751;
+  /* background colors */
+  --main-background-color: white;
+  --body-background-color: #f2e4d8;
+  --information-bg-color: #fff7fb;
+  --light-bg-color: #e3ddd7;
+}
+
+/*** reset ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* typography */
+  font-family: var(--main-font-family);
+  color: var(--light-font-color);
+  font-size: 1em;
+  line-height: 150%;
+  /* base */
+  min-width: 20em;
+  background-color: var(--main-background-color);
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: var(--body-background-color);
+    margin-inline: auto;
+    padding-inline: 2rem;
+  }
+}
+
+/*** typography ***/
+h1,
+h2 {
+  font-family: var(--highlight-font-family);
+  font-weight: 500;
+  line-height: 100%;
+}
+
+h1 {
+  color: var(--dark-font-color);
+  font-size: 2.25em;
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  color: var(--highlight-font-color);
+  font-size: 1.75em;
+}
+
+p {
+  margin-top: 1.4rem;
+}
+
+/*** components ***/
+/* images */
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 10.68rem;
+}
+
+@media (min-width: 576px) {
+  img {
+    border-radius: 1.5rem;
+    height: 18.75rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* lists */
+ul,
+ol {
+  margin: 1.5rem 0;
+}
+
+li {
+  /* positions li */
+  margin-left: 1.3rem;
+  /* pushes li away from li::marker */
+  padding-left: 1.1rem;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: var(--highlight-font-color);
+  font-weight: 800;
+}
+
+ul li::marker {
+  font-size: small;
+}
+
+/* seperators */
+hr {
+  border: 1px solid var(--light-bg-color);
+  margin: 2rem 0;
+}
+
+/* informations*/
+.information {
+  background-color: var(--information-bg-color);
+  padding: 1.5rem 1.5rem 0.1rem;
+  border-radius: 0.75rem;
+  margin: 2rem 0;
+}
+
+.information h2 {
+  font-family: var(--main-font-family);
+  color: var(--information-font-color);
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.information li {
+  margin-bottom: 0.3rem;
+}
+
+.information li::marker {
+  color: var(--information-font-color);
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 2.9rem;
+  margin-top: 0.9rem;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--light-bg-color);
+}
+
+th {
+  font-weight: 500;
+}
+
+td {
+  color: var(--highlight-font-color);
+}
+
+/* challenge attribution in footer */
+.attribution {
+  text-align: center;
+  font-size: 0.7em;
+}
+
+/*** layout ***/
+.background {
+  background-color: var(--main-background-color);
+}
+
+.hero {
+  padding: 2.05em 2rem 0;
+}
+
+main {
+  padding: 0 2rem 2.5rem;
+}
+
+@media (min-width: 576px) {
+  .background {
+    border-radius: 1.5rem;
+    margin: 7.68rem auto 6.3rem;
+    padding: 2.5rem;
+    max-width: 46em;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  main {
+    padding: 0;
+  }
+}
